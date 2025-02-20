@@ -5,6 +5,10 @@
 @theme {
   --font-montserrat: montserrat, "sans-serif";
   --font-palanquin: palanquin, "sans-serif";
+  --color-primary: #0000; 
+  --color-secondary: #6d6d6d; 
+  --color-tertiary: #ff6452; 
+  /* --text-lg: 100px; */
 }
 
 * {
