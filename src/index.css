@@ -5,9 +5,9 @@
 @theme {
   --font-montserrat: montserrat, "sans-serif";
   --font-palanquin: palanquin, "sans-serif";
-  --color-primary: #0000; 
-  --color-secondary: #6d6d6d; 
-  --color-tertiary: #ff6452; 
+  --color-primary: #0000;
+  --color-secondary: #6d6d6d;
+  --color-tertiary: #ff6452;
   /* --text-lg: 100px; */
 }
 
@@ -16,6 +16,12 @@
   padding: 0; */
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 @layer components {
@@ -60,5 +66,31 @@
 
   .info-text {
     @apply font-montserrat text-slate-500 text-lg leading-7;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .heading {
+    @apply text-2xl sm:text-3xl lg:text-5xl font-bold font-palanquin mb-1.5 sm:w-lg md:leading-14;
+  }
+
+  .description {
+    @apply text-secondary font-montserrat lg:max-w-lg mt-7;
+  }
+
+  .bg-hero {
+    background-image: url("assets/images/collection-background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-hero-card {
+    background-image: url("assets/images/thumbnail-background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
